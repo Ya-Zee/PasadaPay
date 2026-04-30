@@ -1,4 +1,4 @@
-# PasadaPay Split
+# PasadaPay
 
 > Automated boundary splitting for tricycle drivers and operators — powered by Stellar and Soroban.
 
@@ -20,7 +20,7 @@ A tricycle driver in Pasig City earns PHP 800–1,200/day but settles his daily 
 
 ## ✅ Solution
 
-PasadaPay Split lets the driver log his end-of-day gross earnings into a mobile web app. A Soroban smart contract:
+PasadaPay lets the driver log his end-of-day gross earnings into a mobile web app. A Soroban smart contract:
 
 1. Reads the pre-agreed boundary split ratio stored on-chain
 2. Calculates each party's share to the stroop (1 XLM = 10,000,000 stroops)
