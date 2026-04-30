@@ -270,6 +270,9 @@ soroban contract invoke \
 | Multi-driver support | Extend contract to manage a fleet: operator registers N drivers, each with individual split ratios |
 
 ---
+## Deployed contract link
+[1] https://stellar.expert/explorer/testnet/tx/cf643ec5499b0bc883491647172de46883f4823ff998cc4c24818b7c17f21d95
+[2] https://lab.stellar.org/r/testnet/contract/CD7ZGLRMX7U3WN2SRLPPV4ERES5SSYQBTVUGZK5IGFCLE5POCC3TSO6L
 
 ## 📜 License
 
