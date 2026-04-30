@@ -20,7 +20,7 @@ A tricycle driver in Pasig City earns PHP 800–1,200/day but settles his daily 
 
 ## ✅ Solution
 
-TrikePay Split lets the driver log his end-of-day gross earnings into a mobile web app. A Soroban smart contract:
+PasadaPay Split lets the driver log his end-of-day gross earnings into a mobile web app. A Soroban smart contract:
 
 1. Reads the pre-agreed boundary split ratio stored on-chain
 2. Calculates each party's share to the stroop (1 XLM = 10,000,000 stroops)
@@ -87,7 +87,7 @@ Demo-able end-to-end in under 90 seconds.
 ## 📁 Project Structure
 
 ```
-trike_pay_split/
+PasadaPay/
 ├── Cargo.toml
 └── src/
     ├── lib.rs       # Soroban smart contract
@@ -122,7 +122,7 @@ trike_pay_split/
 soroban contract build
 ```
 
-Output: `target/wasm32-unknown-unknown/release/trike_pay_split.wasm`
+Output: `target/wasm32-unknown-unknown/release/pasada_pay.wasm`
 
 ---
 
@@ -149,7 +149,7 @@ test result: ok. 5 passed; 0 failed
 
 ```bash
 soroban contract deploy \
-  --wasm target/wasm32-unknown-unknown/release/trike_pay_split.wasm \
+  --wasm target/wasm32-unknown-unknown/release/pasada_pay.wasm \
   --source YOUR_SECRET_KEY \
   --rpc-url https://soroban-testnet.stellar.org \
   --network-passphrase "Test SDF Network ; September 2015"

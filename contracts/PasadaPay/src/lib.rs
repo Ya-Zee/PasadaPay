@@ -34,10 +34,10 @@ pub struct PayoutRecord {
 
 // ── Contract ──────────────────────────────────────────────────────────────────
 #[contract]
-pub struct TrikePay;
+pub struct PasadaPay;
 
 #[contractimpl]
-impl TrikePay {
+impl PasadaPay {
     /// Called once by the driver (or a setup admin) to register the boundary agreement.
     /// driver_share_pct must be between 1 and 99 inclusive.
     pub fn init(

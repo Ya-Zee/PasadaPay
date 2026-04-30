@@ -4,14 +4,14 @@ mod tests {
     use soroban_sdk::{testutils::Address as _, Address, Env};
 
     /// Helper: deploy contract and initialize with a 65/35 split.
-    fn setup() -> (Env, Address, Address, Address, TrikePayClient<'static>) {
+    fn setup() -> (Env, Address, Address, Address, PasadaPayClient<'static>) {
         let env = Env::default();
         env.mock_all_auths(); // auto-approve all auth checks in tests
         let driver = Address::generate(&env);
         let operator = Address::generate(&env);
         let xlm_token = Address::generate(&env); // mock XLM token address
-        let contract_id = env.register_contract(None, TrikePay);
-        let client = TrikePayClient::new(&env, &contract_id);
+        let contract_id = env.register_contract(None, PasadaPay);
+        let client = PasadaPayClient::new(&env, &contract_id);
         // Initialize with 65% driver / 35% operator split
         client.init(&driver, &operator, &xlm_token, &65u32);
         (env, driver, operator, xlm_token, client)
