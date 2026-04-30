@@ -1,4 +1,4 @@
-# TrikePay Split
+# PasadaPay Split
 
 > Automated boundary splitting for tricycle drivers and operators — powered by Stellar and Soroban.
 
@@ -6,7 +6,7 @@
 
 ## 📌 Overview
 
-TrikePay Split is a Soroban smart contract that automates the daily **boundary fee settlement** between tricycle drivers and operators in the Philippines.
+PasadaPay is a Soroban smart contract that automates the daily **boundary fee settlement** between tricycle drivers and operators in the Philippines.
 
 Instead of manually handing over cash at the end of every shift — with no receipts and frequent disputes — the driver submits their gross earnings once through a mobile web app. The Soroban contract instantly calculates the pre-agreed split (e.g., 65% driver / 35% operator) and transfers XLM to both wallets in under 5 seconds for less than ₱0.01 in fees. Every payout is recorded on-chain as an immutable receipt.
 
@@ -275,5 +275,3 @@ soroban contract invoke \
 [2] https://lab.stellar.org/r/testnet/contract/CD7ZGLRMX7U3WN2SRLPPV4ERES5SSYQBTVUGZK5IGFCLE5POCC3TSO6L
 
 ## 📜 License
-
-MIT
